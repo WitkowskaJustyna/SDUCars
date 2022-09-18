@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title = "Showrooms">
+      
+            <template for:each={showrooms.data} for:item = "showroomObj" for:index="index">
+                <p key={showroomObj.Id} class="slds-p-horizontal_small">
+                    <a href="#" onclick={handleClick} data-showroomid={showroomObj.Id}>{showroomObj.Showroom_Name__c}
+                    </a>
+                    
+                </p>
+            </template>
+       
+    </lightning-card>   
+</template>

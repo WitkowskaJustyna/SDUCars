@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Vehicles">
+        <lightning-datatable if:true={relatedVehicles.data}
+            key-field="id"
+            data={relatedVehicles.data}
+            columns={columns}>
+        </lightning-datatable>
+    </lightning-card>    
+</template>
